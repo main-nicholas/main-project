@@ -15,10 +15,9 @@
 
 .call-to-quote {
   text-decoration: none;
-  width: 100px;
+  width: 10rem;
   display: block;
   text-align: center;
-  font-size: 15px;
 
   font-weight: bold;
   color: #1c7ed6;
@@ -227,7 +226,7 @@
 
 .front-image {
   width: 100%;
-  height: 100%;
+
   margin-bottom: 16 rem;
 }
 

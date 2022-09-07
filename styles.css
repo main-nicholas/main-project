@@ -19,7 +19,7 @@ li {
 }
 
 .container {
-  max-width: 2080px;
+  max-width: 208rem;
   padding: 1rem 5%;
   margin: 0 auto;
 }
@@ -347,7 +347,7 @@ iframe {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .btn-background-focus {
