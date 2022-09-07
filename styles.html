@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.toggle-nav').click(function () {
+          $('.menu-1 ul li').slideToggle('slow');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu-1">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+            <ul>
+              <li><a href="styles.html">Colors</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="quote-li"><p class="call-to-quote quote-btn">Quote</p></li>
+        </ul>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/pg/memorialartcompany"
+            target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/memorialartco" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.google.com/search?q=Memorial+Art+Company"
+            target="_blank"
+            ><i class="fa fa-google"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="bodyGrid">
+        <div class="opener">
+          <h1 class="storeH1">Styles And Colors</h1>
+        </div>
+      </div>
+
+      <div class="grid-4-col">
+        <div class="granite-header">
+          <h2 class="granite-h2">Granite Colors</h2>
+          <p>Contact us to see more options.</p>
+        </div>
+        <img src="img/colors/american-black.jpg" alt="granite color" />
+        <img src="img/colors/bahama-blue.jpg" alt="granite color" />
+        <img src="img/colors/blue-pearl.jpg" alt="granite color" />
+        <img src="img/colors/china-black.jpg" alt="granite color" />
+        <img src="img/colors/china-gray.jpg" alt="granite color" />
+        <img src="img/colors/colonial-rose.jpg" alt="granite color" />
+        <img src="img/colors/georgia-gray.jpg" alt="granite color" />
+        <img src="img/colors/india-mist.jpg" alt="granite color" />
+        <img src="img/colors/india-red.jpg" alt="granite color" />
+        <img src="img/colors/MAHOGANY.jpg" alt="granite color" />
+        <img src="img/colors/north-american-pink.jpg" alt="granite color" />
+        <img src="img/colors/paradiso.jpg" alt="granite color" />
+        <img src="img/colors/sierra-white.jpg" alt="granite color" />
+        <img src="img/colors/wausau.jpg" alt="granite color" />
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Give us the details and <br />
+        get a quick <span class="highlight">quote</span>
+      </h2>
+      <form
+        method="POST"
+        action="https://formspree.io/f/mkneglpb"
+        class="modal__form"
+      >
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Cemetery</label>
+        <input type="text" name="cemetery" />
+        <label>Phone Number</label>
+        <input type="text" name="phone" />
+        <label>Email Address</label>
+        <input type="email" name="email" />
+        <label>Monument Details</label>
+        <textarea class="mon-details" name="details"></textarea>
+
+        <button class="btn-submit" style="float: right">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

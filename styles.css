@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+  color: #212529;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 2080px;
+  padding: 1rem 5%;
+  margin: 0 auto;
+}
+
+.company_name {
+  font-size: 1rem;
+  color: #1c7ed6;
+}
+
+.opener h1 {
+  font-size: 8.6rem;
+  margin-bottom: 1.6rem;
+  font-weight: 70rem;
+}
+
+.opener p {
+  /* margin-bottom: 240px; */
+  font-size: 3rem;
+}
+
+.opener {
+  align-self: center;
+}
+
+a:visited {
+  color: white;
+}
+
+.bodyGrid {
+  /* background-image: url('img/headstone1.jpg'); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5),
+      transparent 50%
+    ),
+    url('img/headstone1.jpg');
+  background-size: 100% 100%;
+  margin-bottom: 12rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 50rem;
+
+  text-align: center;
+}
+
+h2 {
+  font-size: 5.2rem;
+
+  text-align: center;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 8rem;
+
+  margin-bottom: 12rem;
+  margin-top: 8.8rem;
+}
+
+.serviceIcon {
+  stroke: #1c7ed6;
+  max-width: 3.2rem;
+  height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.features-title {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+}
+
+.features-text {
+  line-height: 1.4;
+  font-size: 2rem;
+}
+.getStarted button {
+  padding: 2rem;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.google {
+  margin-right: 0.7rem;
+}
+
+.grid-3-cols img {
+  margin-top: 4rem;
+  width: 100%;
+  border: 2px solid #f8f9fa;
+  border-radius: 1rem;
+}
+
+.product-header {
+  margin-top: 8.8rem;
+  margin-bottom: 8.8rem;
+  grid-column: span 4;
+}
+
+.quote-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  background-color: #f8f9fa;
+  align-items: center;
+  justify-content: center;
+  row-gap: 12rem;
+}
+
+.video-quote {
+  width: 100%;
+}
+
+.btn-class {
+  display: flex;
+  font-size: 3.4rem;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.gallery-btn {
+  gap: 0;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  padding: 2rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+
+  transition: all 0.3s;
+}
+
+.quote-btn-index:link,
+.quote-btn-index:visited {
+  background-color: #1c7ed6;
+
+  color: WHITE;
+}
+
+.quote-btn-index:hover,
+.quote-btn-index:active {
+  background-color: #74c0fc;
+}
+
+.store-btn:link,
+.store-btn:visited {
+  background-color: #e9ecef;
+}
+
+.store-btn:hover,
+.store-btn:active {
+  background-color: #dee2e6;
+}
+
+.item-type {
+  font-size: 1.9rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Locations CSS */
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  row-gap: 12.8rem;
+  margin-bottom: 8rem;
+  border: 1px solid black;
+}
+
+.locations-grid h1 {
+  margin-bottom: 1rem;
+}
+
+.locations-grid h2 {
+  font-size: 2rem;
+}
+
+.locations-grid p {
+  line-height: 1.4;
+  font-size: 2rem;
+}
+
+.email-address {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #1c7ed6;
+}
+
+.locations-grid img {
+  max-width: 100%;
+}
+
+.office-info {
+  display: grid;
+  grid-template-columns: 1fr 36.9rem 1fr;
+  align-items: center;
+  text-align: center;
+
+  background-color: #f8f9fa;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.last-p {
+  margin-bottom: 1rem;
+}
+.email,
+.phone {
+  width: 4.8rem;
+  height: 4.8rem;
+  stroke: #1c7ed6;
+}
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 96rem;
+  background-color: #f3f3f3;
+  padding: 8rem 6.4rem;
+  box-shadow: 0 6.4rem 7.2rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 5.2rem;
+  margin-bottom: 7.2rem;
+  line-height: 1.5;
+}
+
+.modal__form {
+  margin: 0 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.modal__form label {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+.modal__form input {
+  font-size: 1.9rem;
+  padding: 1.6rem 2.4rem;
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+}
+
+.modal__form textarea {
+  word-wrap: break-word;
+  font-size: 1.9rem;
+  padding: 1.6rem 2.4rem;
+  height: 20rem;
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1.6rem;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.8rem;
+  right: 3.2rem;
+  font-size: 6.4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-locations {
+  font-size: 3.2rem;
+  margin-top: -4rem;
+  font-weight: 400;
+  background: #f8f9fa;
+  justify-content: center;
+  border-radius: 2rem 2rem 0 0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-background-focus {
+  background-color: #1c7ed6;
+  color: white;
+}
+
+@media screen and (max-width: 78rem) {
+  .btn-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+  }
+
+  .btn-locations {
+    border-radius: 0 0 0 0;
+    border: 1px solid black;
+  }
+}
+
+.btn-submit {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: right;
+}
+
+.storeH1 {
+  padding-top: 7rem;
+}
+
+.companyNameH1 {
+  padding-top: 2.4rem;
+}
+
+.cityName {
+  font-size: 3rem;
+}
+
+.cityName,
+.contactH2,
+.hoursH2 {
+  color: #1c7ed6;
+}
+
+.hoursH2 {
+  margin-top: 1rem;
+}
+
+.contactH2 {
+  margin-bottom: 0.5rem;
+}

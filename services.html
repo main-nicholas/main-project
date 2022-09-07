@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.toggle-nav').click(function () {
+          $('.menu-1 ul li').slideToggle('slow');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu-1">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+            <ul>
+              <li><a href="styles.html">Colors</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="quote-li"><p class="call-to-quote quote-btn">Quote</p></li>
+        </ul>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/pg/memorialartcompany"
+            target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/memorialartco" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.google.com/search?q=Memorial+Art+Company"
+            target="_blank"
+            ><i class="fa fa-google"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="bodyGrid">
+        <div class="opener">
+          <h1 class="storeH1">Product and Services</h1>
+        </div>
+
+        <!-- <img class="videoClass" src="/img/videoplaceholder.jpg" alt="video" /> -->
+      </div>
+
+      <div class="grid-2-container">
+        <div class="services-images">
+          <img src="img/services.jpg" alt="monument" />
+        </div>
+        <div class="services-text">
+          <h2>Monuments and Memorials</h2>
+          <p class="features-text ft1">
+            We offer a wide slection of stones and bronze in various shapes and
+            color options that can be designed and eatched by our professionally
+            trained and insured team within our own facilities.
+          </p>
+          <button class="btnGallery">Check Out Our Gallery</button>
+        </div>
+      </div>
+      <div class="grid-2-container">
+        <div class="services-text">
+          <h2>Cremation Memorials and Columbariums</h2>
+          <p class="features-text">
+            We offer a wide selection of creamtion vaults, urns, columbariums,
+            and mausoleums in various shapes and colors that can be designed and
+            etched by our professionally trained and insured team within our own
+            facilities at our main office.
+          </p>
+        </div>
+        <div class="services-images">
+          <img src="img/cremation.jpg" alt="monument" />
+        </div>
+      </div>
+      <div class="grid-2-container">
+        <div class="services-images">
+          <img src="img/rembrances.jpg" alt="monument" />
+        </div>
+        <div class="services-text">
+          <h2>Other Memorials and Remembrances</h2>
+          <p class="features-text">
+            Our team of experts can help create the perfect memorial artwork for
+            any occasion. We offer a variety of additional memorial and
+            remembrance artwork perfect for your home, office, or as a gift.
+          </p>
+        </div>
+      </div>
+      <div class="grid-2-container">
+        <div class="services-text">
+          <h2>Monument Services and Restoration</h2>
+          <p class="features-text">
+            Our team of professionally trained and insured monument experts are
+            here to help from the design and purchase, to the repairs and
+            maintenance of your memorials, monuments, and plaques.
+          </p>
+        </div>
+        <div class="services-images">
+          <img src="img/restoration.jpg" alt="monument" />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Give us the details and <br />
+        get a quick <span class="highlight">quote</span>
+      </h2>
+      <form
+        method="POST"
+        action="https://formspree.io/f/mkneglpb"
+        class="modal__form"
+      >
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Cemetery</label>
+        <input type="text" name="cemetery" />
+        <label>Phone Number</label>
+        <input type="text" name="phone" />
+        <label>Email Address</label>
+        <input type="email" name="email" />
+        <label>Monument Details</label>
+        <textarea class="mon-details" name="details">
+What are you looking for?</textarea
+        >
+
+        <button class="btn-submit" style="float: right">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

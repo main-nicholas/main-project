@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.toggle-nav').click(function () {
+          $('.menu-1 ul li').slideToggle('slow');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu-1">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+            <ul>
+              <li><a href="styles.html">Colors</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="quote-li"><p class="call-to-quote quote-btn">Quote</p></li>
+        </ul>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/pg/memorialartcompany"
+            target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/memorialartco" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.google.com/search?q=Memorial+Art+Company"
+            target="_blank"
+            ><i class="fa fa-google"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="bodyGrid">
+        <div class="opener">
+          <h1 class="companyNameH1">Memorial Art Monuments</h1>
+          <p>Leaders in Memorial Artistry since 1927.</p>
+        </div>
+
+        <!-- <img class="videoClass" src="/img/videoplaceholder.jpg" alt="video" /> -->
+      </div>
+      <h2 class="index-h2">What we offer.</h2>
+      <div class="grid-3-cols">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="serviceIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+          <p class="features-title">
+            <strong>Experienced Monument Experts</strong>
+          </p>
+          <p class="features-text">
+            Leaders in memorial artistry since 1927. Our team of monument
+            experts are here to help make memorializing your loved ones as
+            convenient as possible.
+          </p>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="serviceIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            />
+          </svg>
+          <p class="features-title">
+            <strong>Top Quality Products & Services</strong>
+          </p>
+          <p class="features-text">
+            Renowned for our attention to detail and precision artistry, we
+            specialize in creating uniquely customized memorial artwork to help
+            capture the memory of your loved ones for generations to come.
+          </p>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="serviceIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <p class="features-title">
+            <strong>Extended Memorial Assistance</strong>
+          </p>
+          <p class="features-text">
+            Our team of monument experts can consult, design, and create your
+            memorial artwork entirely online or by phone - and can be
+            professionally set by our trained team, or shipped
+          </p>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="serviceIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          <p class="features-title">
+            <strong>Restoration & Maintenace</strong>
+          </p>
+          <p class="features-text">
+            Our experts can help with maintenance, restoration and minor
+            alterations to existing memorial artwork within the service of our
+            six locations
+          </p>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div class="quote-div">
+          <h2 class="quote-ask">Get started today.</h2>
+          <div class="btn-class">
+            <a href="#" class="btn quote-btn quote-btn-index">Request Quote</a>
+            &nbsp;
+            <a href="locations.html" class="btn store-btn">Store Locations</a>
+          </div>
+        </div>
+        <video class="video-quote image-video" controls autoplay muted loop>
+          <source src="img/video1.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <img class="front-image image-video" src="img/front-image.jpg" />
+        <div class="quote-div">
+          <h2 class="quote-ask">View our work.</h2>
+          <div class="btn-class gallery-btn">
+            <a href="gallery.html" class="btn quote-btn-index">Gallery</a>
+            &nbsp;
+          </div>
+        </div>
+      </div>
+      <!-- <h2 class="product-header">Pick out the right style for you.</h2>
+      <div class="grid-3-cols">
+        <div class="item-type markers">
+          <strong>Markers</strong>
+          <a href="#">
+            <img
+              src="img/grassmarker.jpg"
+              onmouseover="this.src='img/upright.jpg'"
+              onmouseout="this.src='img/grassmarker.jpg'"
+              border="0"
+              alt=""
+          /></a>
+        </div>
+        <div class="item-type uprights">
+          <strong>Uprights</strong>
+          <a href="#">
+            <img
+              src="img/upright.jpg"
+              onmouseover="this.src='img/upright2.jpg'"
+              onmouseout="this.src='img/upright.jpg'"
+              border="0"
+              alt=""
+          /></a>
+        </div>
+        <div class="item-type slants">
+          <strong>Slants - Bevels</strong
+          ><a href="#">
+            <img
+              src="img/grassmarker.jpg"
+              onmouseover="this.src='img/upright.jpg'"
+              onmouseout="this.src='img/grassmarker.jpg'"
+              border="0"
+              alt=""
+          /></a>
+        </div>
+        <div class="item-type special">
+          <strong>Special</strong
+          ><a href="#">
+            <img
+              src="img/grassmarker.jpg"
+              onmouseover="this.src='img/upright.jpg'"
+              onmouseout="this.src='img/grassmarker.jpg'"
+              border="0"
+              alt=""
+          /></a>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Give us the details and <br />
+        get a quick <span class="highlight">quote</span>
+      </h2>
+      <form
+        method="POST"
+        action="https://formspree.io/f/mkneglpb"
+        class="modal__form"
+      >
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Cemetery</label>
+        <input type="text" name="cemetery" />
+        <label>Phone Number</label>
+        <input type="text" name="phone" />
+        <label>Email Address</label>
+        <input type="email" name="email" />
+        <label>Monument Details</label>
+        <textarea class="mon-details" name="details"></textarea>
+
+        <button class="btn-submit" style="float: right">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
