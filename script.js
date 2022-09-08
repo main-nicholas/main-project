@@ -147,14 +147,6 @@ btnContainer?.addEventListener('click', (e) => {
   addFocus(this[targetName]);
   hideLocation(this[targetName.substring(targetName.indexOf('-') + 1)]);
 });
-function myFunction() {
-  var x = document.getElementById('myTopnav');
-  if (x.className === 'rightnav') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'rightnav';
-  }
-}
 
 imagesBtns?.addEventListener('click', (e) => {
   e.preventDefault();

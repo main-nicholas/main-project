@@ -72,7 +72,7 @@ h2 {
   text-align: center;
 }
 
-.grid-3-cols {
+.grid-4-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 8rem;
@@ -108,7 +108,7 @@ h2 {
   margin-right: 0.7rem;
 }
 
-.grid-3-cols img {
+.grid-4-cols img {
   margin-top: 4rem;
   width: 100%;
   border: 2px solid #f8f9fa;
@@ -124,7 +124,7 @@ h2 {
 .quote-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 100%;
+
   background-color: #f8f9fa;
   align-items: center;
   justify-content: center;
@@ -159,6 +159,9 @@ h2 {
   justify-content: center;
 
   transition: all 0.3s;
+}
+.btn {
+  font-size: 30px;
 }
 
 .quote-btn-index:link,
@@ -252,7 +255,7 @@ iframe {
   transform: translate(-50%, -50%);
   max-width: 96rem;
   background-color: #f3f3f3;
-  padding: 8rem 6.4rem;
+  padding: 2rem 6.4rem;
   box-shadow: 0 6.4rem 7.2rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
@@ -271,8 +274,8 @@ iframe {
 }
 
 .modal__header {
-  font-size: 5.2rem;
-  margin-bottom: 7.2rem;
+  font-size: 4.2rem;
+  margin-bottom: 4.2rem;
   line-height: 1.5;
 }
 
@@ -281,7 +284,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .modal__form label {
@@ -308,21 +311,20 @@ iframe {
 .modal__form button {
   grid-column: 1 / span 2;
   justify-self: center;
-  margin-top: 1.6rem;
+  margin-top: 1 rem;
 }
 
 .btn--close-modal {
   font-family: inherit;
   color: inherit;
   position: absolute;
-  top: 0.8rem;
+  top: 10.8rem;
   right: 3.2rem;
   font-size: 6.4rem;
   cursor: pointer;
   border: none;
   background: none;
 }
-
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -355,7 +357,7 @@ iframe {
   color: white;
 }
 
-@media screen and (max-width: 78rem) {
+@media screen and (max-width: 850px) {
   .btn-container {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 6rem;
@@ -363,6 +365,34 @@ iframe {
 
   .btn-locations {
     border-radius: 0 0 0 0;
+    border: 1px solid black;
+    height: 10rem;
+  }
+
+  .quote-row {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f8f9fa;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12rem;
+  }
+
+  .grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+
+    margin-bottom: 12rem;
+    margin-top: 8.8rem;
+  }
+
+  .locations-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 8rem;
     border: 1px solid black;
   }
 }
@@ -397,4 +427,15 @@ iframe {
 
 .contactH2 {
   margin-bottom: 0.5rem;
+}
+
+.btn-quo {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 850px) {
+  .btn--close-modal {
+    top: 8%;
+    right: 15%;
+  }
 }

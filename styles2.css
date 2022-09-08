@@ -73,6 +73,11 @@
   background: #1c7ed6;
   color: #fff;
 }
+@media (min-width: 851px) {
+  .menu-1 ul li {
+    display: block !important;
+  }
+}
 @media (max-width: 850px) {
   .toggle-nav {
     font-size: 40px;
@@ -87,7 +92,6 @@
     width: 100%;
   }
   .menu-1 ul li {
-    float: none;
     width: 100%;
   }
 
@@ -234,7 +238,6 @@
   width: 30rem;
   text-align: center;
 }
-
 .grid-4-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -285,4 +288,8 @@
   .menu-1 li:hover ul {
     position: absolute;
   }
+}
+
+.quote-div {
+  width: 100%;
 }
