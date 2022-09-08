@@ -82,7 +82,6 @@
 .grid-2-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
 }
 
 .grid-2-container h2 {
@@ -187,7 +186,7 @@
 .front-image {
   width: 100%;
 
-  margin-bottom: 16 rem;
+  margin-bottom: 16rem;
 }
 
 .btn {
@@ -304,4 +303,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr !important;
   }
+}
+
+.servi-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
 }
