@@ -68,25 +68,81 @@
         </div>
       </div>
 
+      <div class="full-img" id="fullImgBox">
+        <img src="img/marker-1.jpg" id="fullImg" />
+        <span onclick="closeFullImg()">X</span>
+      </div>
       <div class="grid-4-col grid-colors-col">
         <div class="granite-header">
           <h2 class="granite-h2">Granite Colors</h2>
           <p>Contact us to see more options.</p>
         </div>
-        <img src="img/colors/american-black.jpg" alt="granite color" />
-        <img src="img/colors/bahama-blue.jpg" alt="granite color" />
-        <img src="img/colors/blue-pearl.jpg" alt="granite color" />
-        <img src="img/colors/china-black.jpg" alt="granite color" />
-        <img src="img/colors/china-gray.jpg" alt="granite color" />
-        <img src="img/colors/colonial-rose.jpg" alt="granite color" />
-        <img src="img/colors/georgia-gray.jpg" alt="granite color" />
-        <img src="img/colors/india-mist.jpg" alt="granite color" />
-        <img src="img/colors/india-red.jpg" alt="granite color" />
+        <img
+          src="img/colors/american-black.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/bahama-blue.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/blue-pearl.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/china-black.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/china-gray.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/colonial-rose.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/georgia-gray.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/india-mist.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/india-red.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
         <img src="img/colors/MAHOGANY.jpg" alt="granite color" />
-        <img src="img/colors/north-american-pink.jpg" alt="granite color" />
-        <img src="img/colors/paradiso.jpg" alt="granite color" />
-        <img src="img/colors/sierra-white.jpg" alt="granite color" />
-        <img src="img/colors/wausau.jpg" alt="granite color" />
+        <img
+          src="img/colors/north-american-pink.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/paradiso.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/sierra-white.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="img/colors/wausau.jpg"
+          alt="granite color"
+          onclick="openFullImg(this.src)"
+        />
       </div>
     </div>
 
@@ -120,7 +176,27 @@
       </form>
     </div>
     <div class="overlay hidden"></div>
+    <script>
+      var fullImgBox = document.getElementById('fullImgBox');
+      var fullImg = document.getElementById('fullImg');
 
+      function openFullImg(pic) {
+        fullImgBox.style.display = 'flex';
+        fullImg.src = pic;
+        overlay2.classlist.remove('hidden');
+      }
+      function closeFullImg() {
+        fullImgBox.style.display = 'none';
+      }
+
+      fullImg.addEventListener('click', closeFullImg);
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeFullImg();
+        }
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

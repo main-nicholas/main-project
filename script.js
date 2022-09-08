@@ -31,6 +31,8 @@ const greatbend = document.querySelector('.great-bend');
 const oklahoma = document.querySelector('.oklahoma');
 const minneapolis = document.querySelector('.minneapolis');
 
+const gallery__h2 = document.querySelector('.gallery-h2');
+
 const markers = [
   'img/marker-1.jpg',
   'img/marker-2.jpg',
@@ -50,7 +52,7 @@ const markers = [
 ];
 
 const uprights = [
-  'img/up.jpg',
+  'img/up17.jpg',
   'img/up-2.jpg',
   'img/up-3.jpg',
   'img/up-4.jpg',
@@ -62,9 +64,9 @@ const uprights = [
   'img/up-10.jpg',
   'img/up-11.jpg',
   'img/up-12.jpg',
-  'img/up-13.jpg',
+  'img/up18.jpg',
+  'img/upright16.jpg',
   'img/up-14.jpg',
-  'img/up-15.jpg',
 ];
 
 const special = [
@@ -88,19 +90,19 @@ const special = [
 const slants = [
   'img/slant.jpg',
   'img/slant2.jpg',
-  'img/special8.jpg',
-  'img/special7.jpg',
-  'img/slant4.jpg',
-  'img/special5.jpg',
-  'img/special6.jpg',
   'img/slant3.jpg',
-  'img/special11.jpg',
-  'img/special12.jpg',
-  'img/special13.jpg',
-  'img/special14.jpg',
-  'img/special15.jpg',
-  'img/special9.jpg',
-  'img/special10.jpg',
+  'img/slant4.jpg',
+  'img/slant5.jpg',
+  'img/slant6.jpg',
+  'img/slant.jpg',
+  'img/slant2.jpg',
+  'img/slant3.jpg',
+  'img/slant4.jpg',
+  'img/slant5.jpg',
+  'img/slant6.jpg',
+  'img/slant.jpg',
+  'img/slant2.jpg',
+  'img/slant3.jpg',
 ];
 
 const imgArrays = [markers, uprights, slants, special];
@@ -153,7 +155,7 @@ imagesBtns?.addEventListener('click', (e) => {
   const targetNumber = e.target.getAttribute('data-number');
   const targetID = e.target.id;
   addBTNFocus(this[targetID]);
-
+  gallery__h2.innerHTML = e.target.getAttribute('data-name');
   imgGal.forEach((img, index) => {
     img.src = imgArrays[Number(targetNumber)][index];
   });

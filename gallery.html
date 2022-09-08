@@ -71,18 +71,34 @@
       <div class="imagesBtns">
         <button
           id="markers"
+          data-name="Grass Markers"
           data-number="0"
           class="pressTest btn-markers btn-background-focus"
         >
           Markers
         </button>
-        <button data-number="1" id="uprights" class="pressTest btn-uprights">
+        <button
+          data-number="1"
+          id="uprights"
+          data-name="Uprights"
+          class="pressTest btn-uprights"
+        >
           Uprights
         </button>
-        <button data-number="2" id="slants" class="pressTest btn-slants">
+        <button
+          data-number="2"
+          data-name="Slants and Bevels"
+          id="slants"
+          class="pressTest btn-slants"
+        >
           Slants-Bevels
         </button>
-        <button data-number="3" id="special" class="pressTest btn-special">
+        <button
+          data-number="3"
+          data-name="Special Monuments"
+          id="special"
+          class="pressTest btn-special"
+        >
           Special
         </button>
       </div>
@@ -92,7 +108,11 @@
         <span onclick="closeFullImg()">X</span>
       </div>
 
-      <div class="img-gallery">
+      <div class="grid-4-col grid-colors-col">
+        <div class="granite-header">
+          <h2 class="granite-h2 gallery-h2">Grass Markers</h2>
+          <p>Contact us to see more options.</p>
+        </div>
         <img
           class="img-gallery-src"
           src="img/marker-1.jpg"
@@ -161,11 +181,6 @@
         <img
           class="img-gallery-src"
           src="img/marker-2.jpg"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          class="img-gallery-src"
-          src="img/marker-1.jpg"
           onclick="openFullImg(this.src)"
         />
       </div>
