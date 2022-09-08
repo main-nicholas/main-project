@@ -394,8 +394,12 @@ iframe {
 
 @media screen and (max-width: 850px) {
   .btn--close-modal {
-    top: 8%;
+    top: 6%;
     right: 15%;
+  }
+
+  .modal__header {
+    font-size: 2rem;
   }
 
   .office-info {
@@ -451,10 +455,26 @@ iframe {
   }
 
   .modal__form {
-    margin: 0 4.8rem;
+    margin: 0 0rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+
     gap: 0.8rem;
+  }
+
+  .modal__form label {
+    font-size: 2rem;
+  }
+
+  .modal__form input {
+    font-size: 1rem;
+    padding: 1rem 0.1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+  }
+
+  .modal {
+    max-width: 76rem;
   }
 }
