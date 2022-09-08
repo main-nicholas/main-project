@@ -78,37 +78,6 @@
     display: block !important;
   }
 }
-@media (max-width: 850px) {
-  .toggle-nav {
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 0px 10px 0px;
-    background: #6666ff;
-    width: 100%;
-    display: block;
-  }
-  .menu-1 ul li a {
-    width: 100%;
-  }
-  .menu-1 ul li {
-    width: 100%;
-  }
-
-  .menu-1 ul ul {
-    display: block !important; /* hides sublists */
-  }
-
-  .social {
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #fff;
-    float: none;
-  }
-  .call-to-quote {
-    width: 100%;
-  }
-}
 
 .grid-2-container {
   display: grid;
@@ -215,19 +184,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 850px) {
-  .imagesBtns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-
-  .pressTest {
-    padding: 2rem;
-    font-size: 2rem;
-  }
-}
-
 .front-image {
   width: 100%;
 
@@ -257,16 +213,6 @@
   font-size: 2rem;
 }
 
-@media (max-width: 850px) {
-  .granite-header {
-    font-size: 2rem;
-  }
-
-  .granite-header h2 {
-    font-size: 4rem !important;
-  }
-}
-
 .granite-header h2 {
   font-size: 8rem;
 }
@@ -292,4 +238,70 @@
 
 .quote-div {
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .toggle-nav {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    background: #6666ff;
+    width: 100%;
+    display: block;
+  }
+  .menu-1 ul li a {
+    width: 100%;
+  }
+  .menu-1 ul li {
+    width: 100%;
+  }
+
+  .menu-1 ul ul {
+    display: block !important; /* hides sublists */
+  }
+
+  .social {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+    float: none;
+  }
+  .call-to-quote {
+    width: 100%;
+  }
+
+  .granite-header {
+    font-size: 2rem;
+  }
+
+  .granite-header h2 {
+    font-size: 4rem !important;
+  }
+
+  .imagesBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .pressTest {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .grid-2-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+  }
+
+  .companyNameH1 {
+    font-size: 4rem !important;
+  }
+
+  .grid-colors-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
