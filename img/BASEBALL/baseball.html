@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-board">
+        <div class="line-up-one">
+          <ul class="awayUL"></ul>
+        </div>
+        <div class="field">
+          <div class="fullScoreBoard">
+            <div class="scoreboard">
+              <div class="innings">
+                <h1 class="info-label">Baseball</h1>
+                <p class="inningNumber">1</p>
+                <p class="inningNumber">2</p>
+                <p class="inningNumber">3</p>
+                <p class="inningNumber">4</p>
+                <p class="inningNumber">5</p>
+                <p class="inningNumber">6</p>
+                <p class="inningNumber">7</p>
+                <p class="inningNumber">8</p>
+                <p class="inningNumber">9</p>
+                <p>R</p>
+                <p>H</p>
+                <p class="info">Balls</p>
+                <p class="balls reset reset-ball-str">&nbsp;</p>
+                <p class="balls reset reset-ball-str">&nbsp;</p>
+                <p class="balls reset reset-ball-str">&nbsp;</p>
+                <p class="balls reset reset-ball-str">&nbsp;</p>
+              </div>
+              <div class="awayScore">
+                <h1 class="info-label">Cardinals</h1>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayScoreBox">&nbsp;</p>
+                <p class="awayTotalRuns">&nbsp;</p>
+                <p class="awayTotalHits">&nbsp;</p>
+                <p class="info">Strikes</p>
+                <p class="strikes reset-ball-str reset">&nbsp;</p>
+                <p class="reset reset-ball-str strikes">&nbsp;</p>
+                <p class="reset reset-ball-str strikes">&nbsp;</p>
+                <p class="strikes reset-ball no-circle">&nbsp;</p>
+              </div>
+              <div class="homeScore">
+                <h1 class="info-label">Braves</h1>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeScoreBox">&nbsp;</p>
+                <p class="homeTotalRuns">&nbsp;</p>
+                <p class="homeTotalHits">&nbsp;</p>
+                <p class="info">Outs</p>
+                <p class="reset outs">&nbsp;</p>
+                <p class="reset outs">&nbsp;</p>
+                <p class="outs reset">&nbsp;</p>
+                <p class="outs reset no-circle">&nbsp;</p>
+              </div>
+            </div>
+            <section>
+              <div class="bases-container">
+                <p class="bases-img secondBase">&nbsp;</p>
+                <p class="bases-img firstBase">&nbsp;</p>
+                <p class="bases-img thirdBase">&nbsp;</p>
+              </div>
+              <h2 class="curInning">Top 1</h2>
+            </section>
+          </div>
+
+          <canvas id="canvas1" width="400" height="250"></canvas>
+        </div>
+        <div class="line-up-one">
+          <ul class="homeUL"></ul>
+        </div>
+      </div>
+      <div class="pbp">
+        <button class="btn-pitch">Pitch</button>
+        <button class="btn-simGame">Sim To End</button>
+        <button class="btn-nextGame">Next Game</button>
+        <button class="btn-simSeason">Sim Season</button>
+      </div>
+
+      <div class="scoreLog scoreLogHeader">
+        <p>&nbsp;</p>
+        <p class="textAL">Inning</p>
+        <p class="textAL">&nbsp;</p>
+        <p>Away</p>
+        <p>Home</p>
+      </div>
+
+      <div class="scoreLog scoreLogScores"></div>
+    </div>
+    <div></div>
+    <button onclick="showStats()" class="btn-playerStats">Player Stats</button>
+    <!-- <button onclick="processWalk()" class="btn-walk">Walk</button>
+    <button onclick="processSingle()" class="btn-single">Single</button>
+    <button onclick="processDouble()" class="btn-double">Double</button>
+    <button onclick="processTriple()" class="btn-triple">Triple</button>
+    <button onclick="processHomeRun()" class="btn-homerun">HomeRun</button> 
+  <button class="circle">Click Me</button>
+        <button class="strike">Strike</button>
+      -->
+    <div class="playerStats">
+      <select id="chooseTeamStats" onchange="chooseTeam()">
+        <option value="bravesLineUp">Braves</option>
+        <option value="cardinalsLineUp">Cardinals</option>
+      </select>
+      <table class="seasonStats">
+        <tr>
+          <th>Name</th>
+          <th>Pos</th>
+          <th>Age</th>
+          <th>PA</th>
+          <th>AB</th>
+
+          <th>R</th>
+          <th>H</th>
+          <th>1B</th>
+          <th>2B</th>
+          <th>3B</th>
+          <th>HR</th>
+          <th>RBI</th>
+          <th>BB</th>
+          <th>SO</th>
+          <th>AVG</th>
+          <th>OBP</th>
+          <th>SLG</th>
+          <th>OPS</th>
+          <th>OUTS</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="standings">
+      <table class="standings">
+        <tr>
+          <th>Team</th>
+          <th>W</th>
+          <th>L</th>
+          <th>RS</th>
+          <th>RA</th>
+        </tr>
+        <tr class="bravesRecord">
+          <td>Braves</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr class="cardinalsRecord">
+          <td>Cardinals</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <script src="ratings-values.js"></script>
+    <script src="players.js"></script>
+    <script src="script.js"></script>
+    <script src="processHits.js"></script>
+    <script src="seasonstats.js"></script>
+  </body>
+</html>
