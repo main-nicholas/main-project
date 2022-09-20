@@ -751,6 +751,7 @@ simGame?.addEventListener('click', (e) => {
   while (gameOver === false) {
     processPitchResult();
   }
+  gameCount++;
   skipZone = false;
 
   bravesRecord.innerHTML = ` <td>Braves</td>
