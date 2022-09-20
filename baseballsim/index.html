@@ -107,9 +107,69 @@
       </div>
 
       <div class="scoreLog scoreLogScores"></div>
+      <div class="testMe">
+        <button onclick="showStats()" class="btn-playerStats">
+          Player Stats
+        </button>
+        <div class="playerStats">
+          <select id="chooseTeamStats" onchange="chooseTeam()">
+            <option value="bravesLineUp">Braves</option>
+            <option value="cardinalsLineUp">Cardinals</option>
+          </select>
+          <table class="seasonStats">
+            <tr>
+              <th>Name</th>
+              <th>Pos</th>
+              <th>Age</th>
+              <th>PA</th>
+              <th>AB</th>
+
+              <th>R</th>
+              <th>H</th>
+              <th>1B</th>
+              <th>2B</th>
+              <th>3B</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>BB</th>
+              <th>SO</th>
+              <th>AVG</th>
+              <th>OBP</th>
+              <th>SLG</th>
+              <th>OPS</th>
+              <th>OUTS</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="standings">
+          <table class="division">
+            <tr>
+              <th>Team</th>
+              <th>W</th>
+              <th>L</th>
+              <th>RS</th>
+              <th>RA</th>
+            </tr>
+            <tr class="bravesRecord">
+              <td>Braves</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="cardinalsRecord">
+              <td>Cardinals</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-    <div></div>
-    <button onclick="showStats()" class="btn-playerStats">Player Stats</button>
+
     <!-- <button onclick="processWalk()" class="btn-walk">Walk</button>
     <button onclick="processSingle()" class="btn-single">Single</button>
     <button onclick="processDouble()" class="btn-double">Double</button>
@@ -118,62 +178,7 @@
   <button class="circle">Click Me</button>
         <button class="strike">Strike</button>
       -->
-    <div class="playerStats">
-      <select id="chooseTeamStats" onchange="chooseTeam()">
-        <option value="bravesLineUp">Braves</option>
-        <option value="cardinalsLineUp">Cardinals</option>
-      </select>
-      <table class="seasonStats">
-        <tr>
-          <th>Name</th>
-          <th>Pos</th>
-          <th>Age</th>
-          <th>PA</th>
-          <th>AB</th>
 
-          <th>R</th>
-          <th>H</th>
-          <th>1B</th>
-          <th>2B</th>
-          <th>3B</th>
-          <th>HR</th>
-          <th>RBI</th>
-          <th>BB</th>
-          <th>SO</th>
-          <th>AVG</th>
-          <th>OBP</th>
-          <th>SLG</th>
-          <th>OPS</th>
-          <th>OUTS</th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="standings">
-      <table class="division">
-        <tr>
-          <th>Team</th>
-          <th>W</th>
-          <th>L</th>
-          <th>RS</th>
-          <th>RA</th>
-        </tr>
-        <tr class="bravesRecord">
-          <td>Braves</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-        <tr class="cardinalsRecord">
-          <td>Cardinals</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-      </table>
-    </div>
     <script src="ratings-values.js"></script>
     <script src="players.js"></script>
     <script src="script.js"></script>

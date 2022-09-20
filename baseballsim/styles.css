@@ -6,6 +6,8 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .game-board {
@@ -246,9 +248,6 @@ th:first-child {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.standings {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  font-size: 15px;
+.testMe {
+  margin: 0 auto;
 }
